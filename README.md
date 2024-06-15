@@ -1,74 +1,91 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Project - Containerization with Docker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Objective:
 
-## Available Scripts
+By the end of this assignment, you will have a solid understanding of containerization with Docker, including its advantages, architecture, and practical implementation. You will gain hands-on experience in building, running, managing Docker containers, and understanding Docker networking and storage solutions.
 
-In the project directory, you can run:
 
-### `npm start`
+### Instructions:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Complete the following tasks by the end of the week. Submit your completed work via the provided submission platform, including any code, configuration files, and a written report detailing your findings and reflections.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Task 1: Introduction to Containerization
+Research and Report:
+Write a 500-word report explaining the concept of containerization. Include the following points:
+Definition and purpose of containerization.
+Advantages of containerization for consistency and scalability.
+Comparison of containerization vs. virtualization, highlighting key differences and use cases.
 
-### `npm test`
+#### Task 2: Understanding Docker and Container Basics
+Docker Installation:
+- Install Docker on your local machine. Provide a screenshot showing Docker running successfully on your system.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Docker Architecture and Components:
+- Write a brief description (300 words) of the Docker architecture. Explain the roles of the following components:
+    * Docker Daemon
+    * Docker Client
+    * Docker Images
+    * Docker Containers
+    * Docker Registries
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Task 3: Hands-On Practical with Docker
+Explore Docker Images, Containers, and Dockerfile:
+- Create a simple Dockerfile for a basic web application using the following GitHub repository: [https://github.com/josephifekwe97/my-app.git](https://github.com/josephifekwe97/my-app.git). Your Dockerfile should:
+    * Use an official base image.
+    * Copy application code into the container.
+    * Install necessary dependencies.
+    * Expose a port.
+    * Define a CMD to run the application.
+- Build the Docker image from the Dockerfile and provide the command used to build it.
+- Run a container using the built image and provide the command used to run it.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Creating and Managing Docker Containers:
+- List all Docker containers on your system and provide the command used to list them.
+- Start, stop, and remove a Docker container. Provide the commands used for each action.
 
-### `npm run eject`
+#### Task 4: Container Orchestration and Networking
+Docker Networking Models:
+- Write a brief explanation (200 words) of the different Docker networking models. Focus on the following:
+    * Bridge Network
+    * Host Network
+    * Overlay Network
+    * Hands-On Networking:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Create a user-defined bridge network.
+    * Run two containers on this network and demonstrate that they can communicate with each other. 
+    * Provide the commands used and a brief explanation of your process.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Task 5: Docker Networking and Storage
+- Explore Docker Networking:
+    * Set up a Docker container with a custom network configuration. 
+    * Provide the network configuration details and commands used to set it up.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Persistent Storage Solutions:
+Research and explain (200 words) the concept of persistent storage in Docker. Include common solutions such as volumes and bind mounts.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Create a Docker container with a mounted volume. Provide the Docker run command used and verify that data persists after container termination and restart.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Submission:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Documentation:
+Combine your written reports and explanations into a single PDF document. Ensure that all code snippets, commands, and explanations are clearly formatted and easy to read.
 
-### Code Splitting
+#### Code and Configurations:
+Submit all relevant Dockerfiles, scripts, and any other configuration files used in your tasks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Screenshots:
+Include screenshots where required, especially for Docker installations and running containers.
 
-### Analyzing the Bundle Size
+### Evaluation Criteria:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Completeness: Have you addressed all parts of the assignment?
+- Accuracy: Are your explanations and configurations correct and well-executed?
+- Clarity: Is your documentation clear and well-organized?
+- Practical Demonstrations: Are your hands-on tasks completed successfully with the correct commands and outputs?
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# my-app
->>>>>>> 712081a079dd145a97e7c423b7282f1dc161a3dc
+### Additional Resources:
+- Docker Documentation: [https://docs.docker.com/](https://docs.docker.com/)
+- Official Docker Images: [https://hub.docker.com/search?q=&type=image](https://hub.docker.com/search?q=&type=image)
