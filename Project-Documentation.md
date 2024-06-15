@@ -30,7 +30,7 @@ Docker Installation:
 *Application running*
 
 Commands
-- Command to build docker image - `docker build -t <image_name>` 
+- Command to build docker image - `docker build -t <image_name> .` 
 - Command to run container image - `docker run -p <host_port>:<container_port> <image_name>`  
 
   
@@ -66,7 +66,7 @@ Commands
 - Command to open a shell in a container- `docker exec -it <container_id_or_name> sh`
 - Command to test reachability - `ping <container_name>`
 - Command to list networks - `docker network ls`
-- Command to inspect network - `docker network inspect <network_name>>`
+- Command to inspect network - `docker network inspect <network_name>`
 - Command to inspect container - `docker inspect --format='{{json .NetworkSettings.Networks}}' <container_name>`
 
   
